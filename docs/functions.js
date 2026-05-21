@@ -34,3 +34,25 @@ function deactivateAllTOCElements() {
 }
 
 
+function activateSection(sections, screenHeight) {
+
+  sections.forEach((section, i) => {
+
+    let id = section.getAttribute('target')
+    let menuItem = document.getElementById('#' + id)
+
+    let boundingRect = section.getBoundingClientRect()
+    let top = boundingRect.top
+    let bottom = boundingRect.bottom
+
+    if ((top < 0.25*screenHeight) & ((bottom > 0) & (bottom > 0.25*screenHeight))) {
+      menuItem.classList.add('active')
+    } else {
+      menuItem.classList.remove('active')
+    }
+
+  })
+  
+}
+
+

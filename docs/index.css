@@ -89,47 +89,45 @@ body * {
 }
 .toc-title {
   margin-bottom: 0.3em;
-  /* margin-left: -0.7em; */
   color: #23272D;
   font-weight: 500;
   border-color: white!important;
 }
 .toc {
   justify-content: start;
-  width: 256px;
+  width: 272px;
   padding: 1.65rem 0rem 0rem 0rem;
   margin: 0rem 0rem 0rem 1rem;
-  /* margin: 0rem 0rem 0rem 0.5rem; */
   font-size: 0.8em;
   color: #606060;
 }
-.toc a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.toc a:hover,
-.toc a:focus {
-  color: #1E5FA5;
-}
 .toc ul {
   list-style: none;
-  /* padding-left: 2.5rem; */
   padding-left: 0;
 }
 .toc li {
+  text-decoration: none;
+  cursor: pointer;
   text-align: left;
   border-left: 0.0625rem solid #CFD7DE;
-  padding-left: 1rem;
-  /* padding-left: 0.5rem; */
-  line-height: 1.8em;
+  padding: 0.2rem 0rem 0.2rem 1rem;
+  /* line-height: 1.8em; */
+  line-height: 1.3em;
+  /* letter-spacing: 0.01rem; */
+}
+.toc li:hover,
+.toc li:focus {
+  color: #1E5FA5;
 }
 .toc li.active {
   color: #1E5FA5;
   border-left: 0.1875rem solid #1E5FA5;
-  padding-left: 0.9375rem;
+  border-left: 0.1875rem solid #3A5E85;
+  padding: 0.2rem 0rem 0.2rem 0.9375rem;
   /* padding-left: 0.4375rem; */
   margin-left: -0.0625rem;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: -0.01rem;
 }
 .button {
   display: none;
@@ -431,7 +429,7 @@ ul i {
 }
 li {
   line-height: 1.75em;
-  text-align: left;
+  /* text-align: left; */
   text-align: justify;
 }
 span {
