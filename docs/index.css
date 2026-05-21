@@ -44,6 +44,10 @@ body * {
   width: 100%;
   /* width: 856px; */
   border-radius: 0.3em;
+  /* max-height: 120px!important; */
+  aspect-ratio: 5;
+  object-fit: cover;
+  object-position: top;
 }
 .jr9sle {
   position: relative;
